@@ -1,10 +1,22 @@
 import React from "react";
+import Me from "../../assets/me.png";
+import { Container, Description, Greetings, Image, ImageMask, ImageWrapper, InfoWrapper, Wrapper } from "../../style/Header/JumbotronStyles.ts";
 
 const Jumbotron:React.FC = () => {
     return (
-        <div>
-            <h1>Jumbotron Components</h1>
-        </div>
+        <Container>
+            <Wrapper>
+                <InfoWrapper>
+                    <Greetings>Hello, I'm Aimanurrofi</Greetings>
+                    <Description>I love graphic design and programming</Description>
+                </InfoWrapper>
+                <ImageWrapper>
+                    <ImageMask>
+                        <Image src={Me} alt="me" />
+                    </ImageMask>
+                </ImageWrapper>
+            </Wrapper>
+        </Container>
     )
 }
 

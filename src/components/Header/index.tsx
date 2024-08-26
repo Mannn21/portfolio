@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
-// import Jumbotron from "./Jumbotron";
+import Jumbotron from "./Jumbotron";
 import { Container, Wrapper } from "../../style/Header/HeaderStyles.ts"
 
 const Header:React.FC = () => {
@@ -8,7 +8,7 @@ const Header:React.FC = () => {
         <Container>
             <Wrapper>
                 <Navbar />
-                {/* <Jumbotron /> */}
+                <Jumbotron />
             </Wrapper>
         </Container>
     )
