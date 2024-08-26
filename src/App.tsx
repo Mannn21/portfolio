@@ -2,6 +2,8 @@ import React from 'react';
 import { ThemeProvider as StyledThemeProvider } from 'styled-components';
 import { useTheme } from './utils/themeChanger';
 import Header from './components/Header';
+import About from './components/About';
+import Service from './components/Service';
 import { Container, Wrapper } from './style/AppStyles';
 
 const App: React.FC = () => {
@@ -12,6 +14,8 @@ const App: React.FC = () => {
       <Container>
         <Wrapper>
           <Header />
+          <Service />
+          <About />
         </Wrapper>
       </Container>
     </StyledThemeProvider>

@@ -8,7 +8,7 @@ const Jumbotron:React.FC = () => {
             <Wrapper>
                 <InfoWrapper>
                     <Greetings>Hello, I'm Aimanurrofi</Greetings>
-                    <Description>I love graphic design and programming</Description>
+                    <Description>I love design and product website</Description>
                 </InfoWrapper>
                 <ImageWrapper>
                     <ImageMask>
