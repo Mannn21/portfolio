@@ -53,20 +53,7 @@ export const Header = styled.h3`
     }
 `
 
-export const Info = styled.p`
-    font-size: 18px;
-    font-weight: 400;
-    letter-spacing: 1.3;
-    text-align: center;
-    color: ${({theme}) => theme.text2};
-    margin-top: -8px;
-
-    @media (min-width: 768px) {
-        font-size: 22px;
-    }
-`
-
-export const ServiceListWrapper = styled.div`
+export const ExperienceListWrapper = styled.div`
     width: 100%;
     height: auto;
     display: grid;
@@ -100,11 +87,20 @@ export const DescWrapper = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 4px;
+    gap: 8px;
 
     @media (min-width: 768px) {
         width: 50%;
     }
+`
+
+export const TitleWrapper = styled.div`
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 `
 
 export const Title = styled.h4`
@@ -112,6 +108,13 @@ export const Title = styled.h4`
     font-weight: 500;
     letter-spacing: 1.3;
     color: ${({theme}) => theme.text};
+`
+
+export const Duration = styled.span`
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.3;
+    color: ${({theme}) => theme.text2};
 `
 
 export const Desc = styled.p`

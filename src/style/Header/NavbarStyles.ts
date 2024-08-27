@@ -9,6 +9,10 @@ export const Container = styled.div`
     position: fixed;
     top: 0;
     left: 0;
+
+    @media (min-width: 768px) {
+        padding: 10px 30px;
+    }
 `
 
 export const Wrapper = styled.nav`

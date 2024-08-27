@@ -2,14 +2,15 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     width: 100%;
-    height: 500px;
-    margin-top: 70px;
+    height: 800px;
+    margin-top: -40px;
     padding: 10px;
     background-color: ${({ theme }) => theme.background};
 
     @media (min-width: 768px) {
         height: calc(100vh - 70px);
         padding: 10px 30px;
+        margin-top: 70px;
     }
 `
 
@@ -20,21 +21,23 @@ export const Wrapper = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px;
-
+    gap: 4px;
+    
     @media (min-width: 768px) {
         flex-direction: row;
+        gap: 10px;
     }
 `
 
 export const InfoWrapper = styled.div`
     width: 100%;
-    height: 100%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2px;
+    margin-bottom: -90px;
 
     @media (min-width: 768px) {
         width: 45%;
@@ -71,7 +74,7 @@ export const Description = styled.h2`
 
 export const ImageWrapper = styled.div`
     width: 100%;
-    height: 100%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,6 +82,7 @@ export const ImageWrapper = styled.div`
 
     @media (min-width: 768px) {
         width: 55%;
+        height: 100%;
     }
 `
 
