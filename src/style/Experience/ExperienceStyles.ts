@@ -4,7 +4,6 @@ export const Container = styled.div`
     width: 100%;
     height: auto;
     padding: 10px;
-    margin-top: -60px;
 
     @media (min-width: 768px) {
         margin-top: 0px;
@@ -104,17 +103,25 @@ export const TitleWrapper = styled.div`
 `
 
 export const Title = styled.h4`
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 500;
     letter-spacing: 1.3;
     color: ${({theme}) => theme.text};
-`
+    
+    @media (min-width: 768px) {
+        font-size: 24px;
+    }
+    `
 
 export const Duration = styled.span`
     font-size: 16px;
     font-weight: 400;
-    letter-spacing: 1.3;
+    letter-spacing: 1.2;
     color: ${({theme}) => theme.text2};
+
+    @media (min-width: 768px) {
+        font-size: 15px;
+    }
 `
 
 export const Desc = styled.p`

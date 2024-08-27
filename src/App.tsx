@@ -5,6 +5,7 @@ import Header from './components/Header';
 import About from './components/About';
 import Service from './components/Service';
 import Experience from './components/Experience';
+import Footer from './components/Footer';
 import { Container, Wrapper } from './style/AppStyles';
 
 const App: React.FC = () => {
@@ -18,6 +19,7 @@ const App: React.FC = () => {
           <Service />
           <About />
           <Experience />
+          <Footer />
         </Wrapper>
       </Container>
     </StyledThemeProvider>
