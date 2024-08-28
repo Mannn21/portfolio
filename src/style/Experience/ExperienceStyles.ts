@@ -111,7 +111,7 @@ export const Title = styled.h4`
     @media (min-width: 768px) {
         font-size: 24px;
     }
-    `
+`
 
 export const Duration = styled.span`
     font-size: 16px;

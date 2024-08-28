@@ -141,12 +141,27 @@ export const MiddleListWrapper = styled.div`
     }
 `
 
-export const MiddleListItem = styled.a`
+export const ResourceListItem = styled.a`
     text-decoration: none;
     color: ${({theme}) => theme.text2};
     font-size: 18px;
     letter-spacing: 1.2;
     text-align: left;
+
+    &:hover {
+        color: ${({ theme }) => theme.primary};
+    }
+`
+
+export const PageListItem = styled.button`
+    text-decoration: none;
+    color: ${({theme}) => theme.text2};
+    font-size: 18px;
+    letter-spacing: 1.2;
+    text-align: left;
+    background-color: ${({theme}) => theme.background};
+    border: none;
+    cursor: pointer;
 
     &:hover {
         color: ${({ theme }) => theme.primary};

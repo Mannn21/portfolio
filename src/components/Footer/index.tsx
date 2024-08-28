@@ -1,11 +1,21 @@
 import React from "react";
-import { Container, Wrapper, LogoWrapper, Logo, Info, SocialWrapper, Social, MiddleWrapper, MiddleBox, MiddleTitle, MiddleListWrapper, MiddleListItem, ContactWrapper, ContactListWrapper, ContactItemWrapper, ContactItem } from "../../style/Footer/FooterStyles.ts";
+import { Container, Wrapper, LogoWrapper, Logo, Info, SocialWrapper, Social, MiddleWrapper, MiddleBox, MiddleTitle, MiddleListWrapper, PageListItem, ResourceListItem, ContactWrapper, ContactListWrapper, ContactItemWrapper, ContactItem } from "../../style/Footer/FooterStyles.ts";
 import { socialLists } from "../../datas/socilaLists";
 import { resourceLists } from "../../datas/resourceLists";
 import { contactLists } from "../../datas/contactLists";
 import { navbarLists } from "../../datas/navbarLists.ts";
+import { scrollDesktop, scrollMobile } from "../../utils/scroll.ts";
 
 const Footer:React.FC = () => {
+
+    const handleScroll = (id: string) => {
+        if (window.innerWidth >= 768) {
+            scrollDesktop(id);
+        } else {
+            scrollMobile(id);
+        }
+    }
+    
     return (
         <Container>
             <Wrapper>
@@ -32,7 +42,7 @@ const Footer:React.FC = () => {
                             {
                                 resourceLists?.map((resource, index: number) => {
                                     return (
-                                        <MiddleListItem href={resource.target} key={index} >{resource.title}</MiddleListItem>
+                                        <ResourceListItem href={resource.target} key={index} >{resource.title}</ResourceListItem>
                                     )
                                 })
                             }
@@ -44,7 +54,7 @@ const Footer:React.FC = () => {
                             {
                                 navbarLists?.map((navbarList, index: number) => {
                                     return (
-                                        <MiddleListItem key={index} href={navbarList.target}>{navbarList.title}</MiddleListItem>
+                                        <PageListItem key={index} onClick={() => handleScroll(navbarList.target)}>{navbarList.title}</PageListItem>
                                     )
                                 })
                             }

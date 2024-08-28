@@ -4,15 +4,18 @@ export const lightTheme = {
   text2: '#4a4a4a',       
   primary: '#6200ea',     
   hover: '#3700b3',       
-  border: '#dddddd',
-  icon1: "#007bff",  // Biru terang
-  icon2: "#ff5733",  // Merah oranye
-  icon3: "#28a745",  // Hijau terang
-  icon4: "#ffc107",  // Kuning
-  icon5: "#ff1493",  // Deep Pink
-  icon6: "#8a2be2",  // Blue Violet
-  icon7: "#00ced1",  // Dark Turquoise
-  icon8: "#ff8c00"   // Dark Orange
+  border: '#bbbbbb',
+  icon1: "#007bff",  
+  icon2: "#ff5733",  
+  icon3: "#28a745",  
+  icon4: "#ffc107",  
+  icon5: "#ff1493",  
+  icon6: "#8a2be2",  
+  icon7: "#00ced1",  
+  icon8: "#ff8c00",
+  icon9: "#00ffff",
+  icon10: "#ff7f50",
+  icon11: "#6a5acd",   
 };
 
 export const darkTheme = {
@@ -22,12 +25,15 @@ export const darkTheme = {
   primary: '#bb86fc',     
   hover: '#3700b3',       
   border: '#444444',
-  icon1: "#1e90ff",  // Dodger Blue
-  icon2: "#ff6347",  // Tomato
-  icon3: "#32cd32",  // Lime Green
-  icon4: "#ffcc00",  // Yellow Orange
-  icon5: "#FF00FF",  // Hot Pink
-  icon6: "#9400d3",  // Dark Violet
-  icon7: "#20b2aa",  // Light Sea Green
-  icon8: "#ffa500"   // Orange
+  icon1: "#1e90ff",  
+  icon2: "#ff6347",  
+  icon3: "#32cd32",  
+  icon4: "#ffcc00",  
+  icon5: "#FF00FF",  
+  icon6: "#9400d3",  
+  icon7: "#20b2aa",  
+  icon8: "#ffa500",
+  icon9: "#00ced1",
+  icon10: "#ff4500", 
+  icon11: "#483d8b"
 };

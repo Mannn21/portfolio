@@ -5,6 +5,7 @@ import { IoSunnyOutline, IoMoonOutline, IoCloseOutline } from "react-icons/io5";
 import { Container, Wrapper, LogoWrapper, Logo, ActionWrapper, Toggle, DropdownButton, NavbarListContainer, NavbarList } from "../../style/Header/NavbarStyles.ts";
 import { lightTheme } from "../../theme.ts";
 import { navbarLists } from "../../datas/navbarLists.ts";
+import { scrollDesktop, scrollMobile } from "../../utils/scroll.ts";
 
 const Navbar:React.FC = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -13,6 +14,15 @@ const Navbar:React.FC = () => {
 
     const handleDropdown:React.MouseEventHandler = () => {
         setIsOpen(!isOpen)
+    }
+
+    const handleScroll = (id: string) => {
+        if (window.innerWidth >= 768) {
+            scrollDesktop(id);
+        } else {
+            scrollMobile(id);
+            setIsOpen(!isOpen)
+        }
     }
     
     return (
@@ -24,7 +34,7 @@ const Navbar:React.FC = () => {
                 <NavbarListContainer isOpen={isOpen}>
                     {navbarLists.map((navbarList, index: number) => {
                         return (
-                            <NavbarList key={index} href={navbarList.target}>
+                            <NavbarList key={index} onClick={() => handleScroll(navbarList.target)}>
                                 {navbarList.title}
                             </NavbarList>
                         );

@@ -153,12 +153,15 @@ export const NavbarListContainer = styled.div<{ isOpen: boolean }>`
     }
 `;
 
-export const NavbarList = styled.a`
-    font-size: 3.3vw;
+export const NavbarList = styled.button`
+    font-size: 3.8vw;
     text-decoration: none;
     color: ${({theme}) => theme.text};
     letter-spacing: 1.2;
     transition: all .2s ease-in-out;
+    background-color: ${({theme}) => theme.background};
+    border: none;
+    cursor: pointer;
 
     &:hover {
         color: ${({theme}) => theme.primary};

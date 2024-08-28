@@ -104,3 +104,19 @@ export const Info = styled.p`
         font-size: 22px;
     }
 `
+
+export const Download = styled.a`
+    text-decoration: none;
+    color: ${({theme}) => theme.background};
+    font-size: 18px;
+    letter-spacing: 1.3;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: ${({theme}) => theme.primary};
+    transition: all .3s ease-in-out;
+    
+    &:hover {
+        background-color: ${({theme}) => theme.hover};
+    }
+`

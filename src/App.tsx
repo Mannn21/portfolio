@@ -4,6 +4,7 @@ import { useTheme } from './utils/themeChanger';
 import Header from './components/Header';
 import About from './components/About';
 import Service from './components/Service';
+import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Footer from './components/Footer';
 import { Container, Wrapper } from './style/AppStyles';
@@ -18,6 +19,7 @@ const App: React.FC = () => {
           <Header />
           <Service />
           <About />
+          <Skills />
           <Experience />
           <Footer />
         </Wrapper>

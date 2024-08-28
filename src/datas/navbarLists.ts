@@ -3,19 +3,23 @@ import { NavbarListType } from "../interface/navbarObjectInterface";
 export const navbarLists:NavbarListType = [
     {
         title: "Home",
-        target: "#",
+        target: "home",
+    },
+    {
+        title: "Service",
+        target: "service",
     },
     {
         title: "About",
-        target: "#",
+        target: "about",
     },
     {
         title: "Skills",
-        target: "#",
+        target: "skills"
     },
     {
-        title: "Projects",
-        target: "#",
+        title: "Experience",
+        target: "experience",
     },
     {
         title: "Contact",
