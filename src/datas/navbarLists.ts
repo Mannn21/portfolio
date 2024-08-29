@@ -23,6 +23,6 @@ export const navbarLists:NavbarListType = [
     },
     {
         title: "Contact",
-        target: "#",
+        target: "contact",
     }
 ]

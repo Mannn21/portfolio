@@ -5,7 +5,7 @@ import { IoSunnyOutline, IoMoonOutline, IoCloseOutline } from "react-icons/io5";
 import { Container, Wrapper, LogoWrapper, Logo, ActionWrapper, Toggle, DropdownButton, NavbarListContainer, NavbarList } from "../../style/Header/NavbarStyles.ts";
 import { lightTheme } from "../../theme.ts";
 import { navbarLists } from "../../datas/navbarLists.ts";
-import { scrollDesktop, scrollMobile } from "../../utils/scroll.ts";
+import { scroll } from "../../utils/scroll.ts";
 
 const Navbar:React.FC = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -18,9 +18,9 @@ const Navbar:React.FC = () => {
 
     const handleScroll = (id: string) => {
         if (window.innerWidth >= 768) {
-            scrollDesktop(id);
+            scroll(id);
         } else {
-            scrollMobile(id);
+            scroll(id);
             setIsOpen(!isOpen)
         }
     }

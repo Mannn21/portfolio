@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {motion} from "framer-motion";
 
 export const Container = styled.div`
     width: 100%;
@@ -105,7 +106,7 @@ export const Info = styled.p`
     }
 `
 
-export const Download = styled.a`
+export const Download = styled(motion.a)`
     text-decoration: none;
     color: ${({theme}) => theme.background};
     font-size: 18px;
@@ -114,9 +115,4 @@ export const Download = styled.a`
     padding: 10px 15px;
     border-radius: 10px;
     background-color: ${({theme}) => theme.primary};
-    transition: all .3s ease-in-out;
-    
-    &:hover {
-        background-color: ${({theme}) => theme.hover};
-    }
 `

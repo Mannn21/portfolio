@@ -6,6 +6,7 @@ import About from './components/About';
 import Service from './components/Service';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { Container, Wrapper } from './style/AppStyles';
 
@@ -21,6 +22,7 @@ const App: React.FC = () => {
           <About />
           <Skills />
           <Experience />
+          <Contact />
           <Footer />
         </Wrapper>
       </Container>

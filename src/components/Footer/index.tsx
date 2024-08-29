@@ -4,15 +4,15 @@ import { socialLists } from "../../datas/socilaLists";
 import { resourceLists } from "../../datas/resourceLists";
 import { contactLists } from "../../datas/contactLists";
 import { navbarLists } from "../../datas/navbarLists.ts";
-import { scrollDesktop, scrollMobile } from "../../utils/scroll.ts";
+import { scroll } from "../../utils/scroll.ts";
 
 const Footer:React.FC = () => {
 
     const handleScroll = (id: string) => {
         if (window.innerWidth >= 768) {
-            scrollDesktop(id);
+            scroll(id);
         } else {
-            scrollMobile(id);
+            scroll(id);
         }
     }
     
