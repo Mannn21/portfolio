@@ -6,7 +6,7 @@ export const Container = styled.footer`
     background-color: ${({theme}) => theme.background};
     padding: 10px 20px;
     margin-top: 50px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 
     @media (min-width: 768px) {
         margin-bottom: 0px;
