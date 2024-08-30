@@ -67,7 +67,7 @@ const Contact: React.FC = () => {
             <Wrapper>
                 <HeaderWrapper>
                     <Header>Contact Me</Header>
-                    <Info>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, est, accusamus omnis quas praesentium provident cum voluptates ducimus quis assumenda doloremque minus laudantium tenetur corporis?</Info>
+                    <Info>Contact me anytime and anywhere easily through the details below for anything, from collaboration to feedback and suggestions. Please provide your information clearly and accurately so that I can read it easily.</Info>
                 </HeaderWrapper>
                 <Form ref={form} onSubmit={sendEmail}>
                     <InputListWrapper>

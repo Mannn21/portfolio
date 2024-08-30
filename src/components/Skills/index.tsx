@@ -8,7 +8,7 @@ const Skills: React.FC = () => {
             <Wrapper>
                 <HeaderWrapper>
                     <Header>Skills</Header>
-                    <Info>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae hic blanditiis odio nostrum, culpa eius dolores esse excepturi, debitis dolorum, soluta quam amet tempore voluptatem.</Info>
+                    <Info>Here are some of the skills and tools I have mastered, which will help you trust the services I provide. From building interfaces to creating APIs, I am proficient with the tools I use.</Info>
                 </HeaderWrapper>
                 <ListWrapper>
                     {

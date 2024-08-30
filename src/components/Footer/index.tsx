@@ -21,7 +21,7 @@ const Footer:React.FC = () => {
             <Wrapper>
                 <LogoWrapper>
                     <Logo>MANNN</Logo>
-                    <Info>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aspernatur autem soluta hic illum facilis!</Info>
+                    <Info>Open to collaboration and new project creation, and receptive to feedback and suggestions.</Info>
                     <SocialWrapper>
                         {
                             socialLists?.map((socialList, index: number) => {
