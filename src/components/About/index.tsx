@@ -1,5 +1,5 @@
 import React from "react";
-import MobileImage from "../../assets/mobile.webp";
+import Picture from "../../assets/picture.jpeg";
 import { useTheme } from "../../utils/themeChanger";
 import { Container, Wrapper, ImageWrapper, ImageMask, Image,InfoWrapper, Header, Info, Download } from "../../style/About/AboutStyles";
 
@@ -11,7 +11,7 @@ const About:React.FC = () => {
             <Wrapper>
                 <ImageWrapper>
                     <ImageMask>
-                        <Image src={MobileImage} alt="me" />
+                        <Image src={Picture} alt="Aimanurrofi" />
                     </ImageMask>
                 </ImageWrapper>
                 <InfoWrapper>
